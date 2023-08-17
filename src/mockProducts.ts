@@ -2,12 +2,20 @@ export const productsList = [
   {
     productId: '992EE2I304_001',
     productName: 'Strickpullover aus nachhaltiger Baumwolle',
+    isSustainable: true,
+    isRecycled: false,
+    isCarpet: false,
+    isComingSoon: false,
+    isGiftcard: false,
+    isMemberExclusive: false,
+    isOnlineExclusive: false,
     colors: [
       {
         colorId: '992EE2I304_039_74',
         name: 'Strickpullover aus nachhaltiger Baumwolle',
         hexCode: '#0000FF',
         fit: 'Regular Fit',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw2df0c93d/images/74/992/992EE2I304_039_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -78,6 +86,7 @@ export const productsList = [
         name: 'Blue',
         hexCode: '#0000FF',
         fit: 'Regular Fit',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw58719334/images/74/992/992EE2I304_001_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -148,6 +157,7 @@ export const productsList = [
         hexCode: '#0000FF',
         fit: 'Regular Fit',
         colorId: '992EE2I304_270_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw14449b1b/images/74/992/992EE2I304_270_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -218,6 +228,7 @@ export const productsList = [
         hexCode: '#0000FF',
         fit: 'Regular Fit',
         colorId: '992EE2I304_314_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dwea1a1311/images/74/992/992EE2I304_314_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -288,6 +299,7 @@ export const productsList = [
         hexCode: '#0000FF',
         fit: 'Regular Fit',
         colorId: '992EE2I304_355_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dwb72c6218/images/74/992/992EE2I304_355_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -358,12 +370,20 @@ export const productsList = [
   {
     productId: '4064819664385',
     productName: 'Hoodie mit Logostickerei, Baumwoll-Mix',
+    isSustainable: true,
+    isRecycled: true,
+    isCarpet: false,
+    isComingSoon: false,
+    isGiftcard: false,
+    isMemberExclusive: false,
+    isOnlineExclusive: false,
     colors: [
       {
         name: 'Hoodie mit Logostickerei, Baumwoll-Mix',
         hexCode: '#0000FF',
         fit: 'Regular Fit',
         colorId: '012EE2J309_400_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw6e81d583/images/74/012/012EE2J309_400_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -434,6 +454,7 @@ export const productsList = [
         name: 'Hoodie mit Logostickerei, Baumwoll-Mix',
         hexCode: '#0000FF',
         colorId: '012EE2J309_296_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dwe003b33b/images/74/012/012EE2J309_296_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         fit: 'Regular Fit',
@@ -505,6 +526,7 @@ export const productsList = [
         hexCode: '#0000FF',
         fit: 'Regular Fit',
         colorId: '012EE2J309_001_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw62958dbf/images/74/012/012EE2J309_001_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -575,12 +597,20 @@ export const productsList = [
   {
     productId: '012EE2J308_296',
     productName: 'Recycelt: Sweatshirt mit Logostickerei',
+    isSustainable: false,
+    isRecycled: true,
+    isCarpet: false,
+    isComingSoon: false,
+    isGiftcard: false,
+    isMemberExclusive: false,
+    isOnlineExclusive: true,
     colors: [
       {
         name: 'Recycelt: Sweatshirt mit Logostickerei',
         hexCode: '#0000FF',
         fit: 'Regular Fit',
         colorId: '012EE2J308_400_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw2daec096/images/74/012/012EE2J308_400_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -651,6 +681,7 @@ export const productsList = [
         fit: 'Regular Fit',
         hexCode: '#0000FF',
         colorId: '012EE2J308_296_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw414d0cc2/images/74/012/012EE2J308_296_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -721,12 +752,20 @@ export const productsList = [
   {
     productId: '092EE2J312_100',
     productName: 'Hoodie im Flicken-Look',
+    isSustainable: true,
+    isRecycled: false,
+    isCarpet: false,
+    isComingSoon: false,
+    isGiftcard: false,
+    isMemberExclusive: true,
+    isOnlineExclusive: false,
     colors: [
       {
         name: 'Hoodie im Flicken-Look',
         hexCode: '#0000FF',
         fit: null,
         colorId: '092EE2J312_100_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dwbc6bb86f/images/74/092/092EE2J312_100_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -791,6 +830,7 @@ export const productsList = [
         hexCode: '#0000FF',
         fit: null,
         colorId: '092EE2J312_400_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dw3d3870a6/images/74/092/092EE2J312_400_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {
@@ -857,6 +897,7 @@ export const productsList = [
         hexCode: '#0000FF',
         fit: null,
         colorId: '092EE2J312_700_74',
+        isFavorite: false,
         colorUrl:
           'https://www.esprit.de/dw/image/v2/BDSS_PRD/on/demandware.static/-/Sites-esprit-master/default/dwac1f9ee5/images/74/092/092EE2J312_700_74.jpg?sfrm=jpg&sw=32&sh=32&sm=fit',
         price: {

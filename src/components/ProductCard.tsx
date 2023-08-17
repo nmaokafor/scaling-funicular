@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import { Box, Flex, Link, Text, useToast, CloseButton } from '@chakra-ui/react';
-import { Color } from '../types/productTypes';
+import { Box, Flex, Link, Text, useToast, CloseButton, Button, Tag } from '@chakra-ui/react';
+import { Color, Product } from '../types/productTypes';
 import ImageSliderComponent from './ImageSliderComponent';
+import { ReactComponent as HeartIcon } from '../assets/icons/heart.svg';
+import { ReactComponent as FilledHeartIcon } from '../assets/icons/filledHeart.svg';
+
 import styled from '@emotion/styled';
+import { extractLabels } from '../utils/utils';
 
 const StyledColorsWrapper = styled(Flex)`
   margin-top: 0.25rem;
@@ -30,6 +34,10 @@ const PriceInfoWrapper = styled(Flex)`
   }
 `;
 
+const StyledTag = styled(Tag)`
+  border-radius: 0;
+`;
+
 const DiscountText = styled(Text)`
   border: 0.5px dashed #d32d1f;
   padding: 1px 2px;
@@ -54,11 +62,6 @@ const SizeText = styled(Text)`
   margin: 0 0.5rem 0.5rem 0;
 `;
 
-interface Product {
-  productId: string;
-  productName: string;
-  colors: Color[];
-}
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const toast = useToast();
   const [selectedColor, setSelectedColor] = useState<Color>(product.colors[0]);
@@ -76,12 +79,18 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
     setShowSizeSelector(false);
   };
 
-  const { images, price, sizeSelector } = selectedColor;
+  const { productName, colors } = product;
+  const { images, price, sizeSelector, isFavorite } = selectedColor;
+  const listOfLabels = extractLabels(product);
 
   return (
     <Box overflow='hidden'>
       <Flex position='relative'>
+        <Button height='52px' width='52px' zIndex=' 100' display='flex' position='absolute' right='0' padding='1rem'>
+          {isFavorite ? <FilledHeartIcon /> : <HeartIcon />}
+        </Button>
         <ImageSliderComponent images={images} />
+
         {showSizeSelector && (
           <SizingWrapper
             className='transition'
@@ -108,7 +117,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       </Flex>
       <Flex pr={4}>
         <StyledColorsWrapper>
-          {product.colors.map((color, index) => {
+          {colors.map((color, index) => {
             const { colorUrl } = color;
 
             return (
@@ -134,7 +143,26 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           <Text variant='body2'>Größen</Text>
         </Link>
       </Flex>
-      <TitleText mb={1}>{product.productName}</TitleText>
+      <TitleText mb={1}>{productName}</TitleText>
+
+      <Flex>
+        {listOfLabels.length > 0 &&
+          listOfLabels.map((label) => {
+            if (!label?.labelTitle) return null;
+
+            return (
+              <StyledTag
+                size='sm'
+                fontSize='brand.xs'
+                variant='solid'
+                colorScheme={label?.color}
+                alignSelf='left'
+                mr={1}>
+                {label?.labelText?.toUpperCase()}
+              </StyledTag>
+            );
+          })}
+      </Flex>
 
       <PriceInfoWrapper align='left'>
         {price.discount ? (

@@ -21,6 +21,14 @@ const theme = extendTheme({
       important: '#d32d1f',
     },
   },
+  fontSizes: {
+    brand: {
+      xs: '0.625rem',
+      sm: '0.75rem',
+      md: '0.875rem',
+      lg: '1.5rem',
+    },
+  },
   components: {
     Text: {
       baseStyle: {
@@ -29,19 +37,19 @@ const theme = extendTheme({
       },
       sizes: {
         h1: {
-          fontSize: '1.5rem',
+          fontSize: 'fontSizes.lg',
           lineHeight: '1.2',
         },
         body1: {
-          fontSize: '0.875rem',
+          fontSize: 'fontSizes.md',
           lineHeight: '1.5',
         },
         body2: {
-          fontSize: '0.75rem',
+          fontSize: 'fontSizes.sm',
           lineHeight: '1.5',
         },
         body3: {
-          fontSize: '0.625rem',
+          fontSize: 'fontSizes.xs',
           lineHeight: '1.5',
         },
       },

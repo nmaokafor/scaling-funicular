@@ -24,9 +24,23 @@ export interface Color {
   name: string;
   hexCode: string;
   fit: string | null;
+  isFavorite: boolean;
   colorUrl: string;
   colorId: string;
   price: Price;
   images: Images[];
   sizeSelector: SizeSelector[];
+}
+
+export interface Product {
+  productId: string;
+  productName: string;
+  isSustainable: boolean;
+  isRecycled: boolean;
+  isCarpet: boolean;
+  isComingSoon: boolean;
+  isGiftcard: boolean;
+  isMemberExclusive: boolean;
+  isOnlineExclusive: boolean;
+  colors: Color[];
 }
