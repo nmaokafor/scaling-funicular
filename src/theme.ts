@@ -37,19 +37,19 @@ const theme = extendTheme({
       },
       sizes: {
         h1: {
-          fontSize: 'fontSizes.lg',
+          fontSize: 'brand.lg',
           lineHeight: '1.2',
         },
         body1: {
-          fontSize: 'fontSizes.md',
+          fontSize: 'brand.md',
           lineHeight: '1.5',
         },
         body2: {
-          fontSize: 'fontSizes.sm',
+          fontSize: 'brand.sm',
           lineHeight: '1.5',
         },
         body3: {
-          fontSize: 'fontSizes.xs',
+          fontSize: 'brand.xs',
           lineHeight: '1.5',
         },
       },
