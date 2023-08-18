@@ -79,14 +79,6 @@ const theme = extendTheme({
         fontWeight: '500',
         color: 'brand.primaryLight',
       },
-      variants: {
-        exclusive: {
-          backgroundColor: '',
-        },
-        sustainable: {
-          backgroundColor: '',
-        },
-      },
     },
   },
 });
