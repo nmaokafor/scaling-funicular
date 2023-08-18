@@ -44,3 +44,10 @@ export interface Product {
   isOnlineExclusive: boolean;
   colors: Color[];
 }
+
+export interface Label {
+  id: string;
+  labelTitle: boolean;
+  labelText: string;
+  color: string;
+}

@@ -17,6 +17,7 @@ const Home = () => {
           <Text as='h1' size='h1' variant='dark'>
             Pullover & Strickjacken für Herren
           </Text>
+
           <Text size='body1' variant='grey'>
             46 Produkte
           </Text>
